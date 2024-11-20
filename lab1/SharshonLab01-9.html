@@ -1,0 +1,73 @@
+﻿<html>
+    <head>
+        <title>Шаршонь Максим 302-ТН Лабораторна робота №1</title>
+        <meta name = "keywords"/>
+        <meta name = "description"/>
+    </head>
+
+    <body bgcolor="C0C0C0">
+        <h1><font color=red face="Calibri Light">Про себе</font></h1>
+        <p align="justify">
+            <font face="Consolas">
+                <i>
+                    Я, Шаршонь Максим Віталійович, народився 27 листопада 2004 року в місті Полтава, Україна.
+                </i>
+            </font>
+        </p>
+
+
+        <p align="justify">
+            <font face="Calibri Light">
+                <u>
+                    У вересні 2022 року вступив до Національного університету "Полтавська політехніка імені Юрія Кондратюка", до ННІІТР 1 - го курсу за спеціальністю 122 - Комп'ютерні науки.
+                    На даний момент продовжую навчання на 3 курсі.
+                </u>
+            </font>
+        </p>
+
+        <h1><font color=blue face="Calibri Light"><i>Моє хобі</i></font></h1>
+
+        <ul>
+            <li><b> Настільний теніс </b></li>
+            <li><b> Музика </b></li>
+            <li><b> Волейбол </b></li>
+            <li><b> Програмування на C# </b></li>
+        </ul>
+
+        <h2><font color=green face="Consolas">Приклад коду</font></h2>
+        <pre> 
+            public class Book
+            {
+                public Guid Id { get; set; }
+                public string Title { get; set; } = string.Empty;
+                public int Pages { get; set; }
+
+                public Guid GenreId { get; set; }
+                public Genre? Genre { get; set; }
+
+                public Guid AuthorId { get; set; }
+                public Author? Author { get; set; }
+
+                public Guid PublisherId { get; set; }
+                public Publisher? Publisher { get; set; }
+
+                public DateTime ReleaseDate { get; set; }
+
+                public override string ToString()
+                {
+                    return $"{Title} - {Author?.Name}, {Genre?.Name}, Pages: {Pages}, Release Date: {ReleaseDate:dd.MM.yyyy}";
+                }
+            }
+
+        </pre>
+
+        <p align="right">
+            <i>
+                <u>
+                    Студент групи 302-ТН Шаршонь М.В.
+                </u>
+            </i>
+        </p>
+
+    </body>
+</html>
