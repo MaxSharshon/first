@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>Шаршонь Максим 302-ТН. Лабораторна робота №7</title>
+    <meta name="keywords" />
+    <meta name="description" />
+</head>
+
+<body bgcolor="1E81B0">
+    <h2> Форма з усіма елементами </h2>
+    <form action="#">
+        <p> Ваше ім'я: <input name="name" type="text" maxlength="40" size="40" value=""></p>
+
+        <p>
+            Ваша стать:
+            <input type="radio" name="pol" value="male"> Чоловіча
+            <input type="radio" name="pol" value="female"> Жіноча
+        </p>
+
+        <p>
+            На якому курсі Ви навчаєтесь?
+            <select name="curs" size="1">
+                <option value="1">Перший</option>
+                <option value="2">Другий</option>
+                <option value="3">Третій</option>
+                <option value="4">Четвертий</option>
+                <option value="5">П'ятий</option>
+            </select>
+        </p>
+
+        <p> Які дисципліни ви вивчаєте на курсі? </p>
+        <p><input type="checkbox" name="algo" value="yes"> Методи та системи штучного інтелекту(МтаСШІ) </p>
+        <p><input type="checkbox" name="oop" value="yes"> Об'єктно-орієнтоване програмування(ООП) </p>
+        <p><input type="checkbox" name="web" value="yes"> WEB-програмування </p>
+        <p><input type="checkbox" name="physics" value="yes"> Теорія прийняття рішень(ТПР) </p>
+
+        <p> Про себе: </p>
+        <textarea name="about" rows="6" cols="60" wrap="off"></textarea><br><br>
+
+        <input type="submit" value="Відпарвити">
+        <input type="reset" value="Очистити форму"><br><br>
+
+        <input type="file" name="friend" size="50" accept="image/*">
+    </form>
+</body>
+
+</html>
