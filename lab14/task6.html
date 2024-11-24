@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day of the Week Finder</title>
+</head>
+
+<body>
+    <script>
+        let dayNumber = parseInt(prompt("Введіть число від 1 до 7:"));
+
+        let dayName = "";
+
+        switch (dayNumber) {
+            case 1:
+                dayName = "Понеділок";
+                break;
+            case 2:
+                dayName = "Вівторок";
+                break;
+            case 3:
+                dayName = "Середа";
+                break;
+            case 4:
+                dayName = "Четвер";
+                break;
+            case 5:
+                dayName = "П'ятниця";
+                break;
+            case 6:
+                dayName = "Субота";
+                break;
+            case 7:
+                dayName = "Неділя";
+                break;
+            default:
+                dayName = "Неправильне число. Введіть число від 1 до 7.";
+                break;
+        }
+
+        document.body.innerHTML = `<h1>${dayName}</h1>`;
+    </script>
+</body>
+
+</html>
