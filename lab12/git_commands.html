@@ -20,6 +20,7 @@
             <tr>
                 <th class="section-title">Create a Repository</th>
                 <th class="section-title">Working with Branches</th>
+                <th class="section-title">Make a change</th>
             </tr>
             <tr>
                 <td>
@@ -44,6 +45,20 @@
                     <code>$ git merge branch_a</code><br>
                     <p>Tag the current commit</p>
                     <code>$ git tag {my_tag}</code>
+                </td>
+                <td>
+                    <p>Stage the file, ready for commit</p>
+                    <code>$ git add [file]</code><br>
+                    <p>Stage all changed files, ready for commit</p>
+                    <code>$ git add</code><br>
+                    <p>Commit all staged files to versioned history</p>
+                    <code>$ git commit -m "commit message"</code><br>
+                    <p>Commit all your tracked files to versioned history</p>
+                    <code>$ git commit -am "commit message"</code><br>
+                    <p>Unstages file, keeping the file changes</p>
+                    <code>$ git reset [file]</code><br>
+                    <p>Revert everything to the last commit</p>
+                    <code>$ git reset --hard</code>
                 </td>
             </tr>
         </table>
