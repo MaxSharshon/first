@@ -21,6 +21,7 @@
                 <th class="section-title">Create a Repository</th>
                 <th class="section-title">Working with Branches</th>
                 <th class="section-title">Make a change</th>
+                <th class="section-title">Synchronize</th>
             </tr>
             <tr>
                 <td>
@@ -59,6 +60,16 @@
                     <code>$ git reset [file]</code><br>
                     <p>Revert everything to the last commit</p>
                     <code>$ git reset --hard</code>
+                </td>
+                <td>
+                    <p>Get the latest changes from origin (no merge)</p>
+                    <code>$ git fetch</code><br>
+                    <p>Fetch the latest changes from origin and merge</p>
+                    <code>$ git pull</code><br>
+                    <p>Fetch the latest changes from origin and rebase</p>
+                    <code>$ git pull --rebase</code><br>
+                    <p>Push local changes to the origin</p>
+                    <code>$ git push</code>
                 </td>
             </tr>
         </table>
