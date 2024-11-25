@@ -1,40 +1,62 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мій особистий блог</title>
     <link rel="stylesheet" href="commands_styles.css">
 </head>
+
 <body>
 
-<div class="container">
-    <header>
-        <h1>Мій особистий блог</h1>
-        <h2>Шаршонь Максим</h2>
-    </header>
+    <div class="container">
+        <header>
+            <h1>Мій особистий блог</h1>
+            <h2>Шаршонь Максим</h2>
+        </header>
 
-    <table>
-        <tr>
-            <th class="section-title">Create a Repository</th>
-        </tr>
-        <tr>
-            <td>
-                <p>From scratch — Create a new local repository</p>
-                <code>$ git init {project_name}</code><br>
-                <p>Download from an existing repository</p>
-                <code>$ git clone {my_url}</code>
-            </td>
-        </tr>
-    </table>
+        <table>
+            <tr>
+                <th class="section-title">Create a Repository</th>
+                <th class="section-title">Working with Branches</th>
+            </tr>
+            <tr>
+                <td>
+                    <p>From scratch — Create a new local repository</p>
+                    <code>$ git init {project_name}</code><br>
+                    <p>Download from an existing repository</p>
+                    <code>$ git clone {my_url}</code>
+                </td>
+                <td>
+                    <p>List all local branches</p>
+                    <code>$ git branch</code><br>
+                    <p>List all branches; local and remote</p>
+                    <code>$ git branch -av</code><br>
+                    <p>Switch to a branch, my_branch, and update working directory</p>
+                    <code>$ git checkout my_branch</code><br>
+                    <p>Create a new branch called new_branch</p>
+                    <code>$ git branch new_branch</code><br>
+                    <p>Delete the branch called my_branch</p>
+                    <code>$ git branch -d my_branch</code><br>
+                    <p>Merge branch_a into branch_b</p>
+                    <code>$ git checkout branch_b</code><br>
+                    <code>$ git merge branch_a</code><br>
+                    <p>Tag the current commit</p>
+                    <code>$ git tag {my_tag}</code>
+                </td>
+            </tr>
+        </table>
 
-    <div class="footer">
-        <p>&copy; Всі права захищені.</p>
-        <p>Розробник: студент групи 302-ТН Шаршонь М.В.</p>
-        <p>When in doubt, use git help: <code>$ git command --help</code></p>
-        <p>Or visit <a href="https://training.github.com/">https://training.github.com/</a> for official GitHub training.</p>
+        <div class="footer">
+            <p>&copy; Всі права захищені.</p>
+            <p>Розробник: студент групи 302-ТН Шаршонь М.В.</p>
+            <p>When in doubt, use git help: <code>$ git command --help</code></p>
+            <p>Or visit <a href="https://training.github.com/">https://training.github.com/</a> for official GitHub
+                training.</p>
+        </div>
     </div>
-</div>
 
 </body>
+
 </html>
